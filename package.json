@@ -1,6 +1,7 @@
 {
   "name": "serverless-appsync-plugin",
   "version": "0.0.0-development",
+  "packageManager": "yarn@3.5.1",
   "description": "AWS AppSync support for the Serverless Framework",
   "main": "lib/index.js",
   "repository": "https://github.com/sid88in/serverless-appsync-plugin",
@@ -13,7 +14,7 @@
     "test:watch": "jest src/__tests__/.*\\.test\\.ts --watch",
     "build": "tsc",
     "lint": "eslint . && tsc --noEmit",
-    "prepare": "rm -rf lib && npm run build"
+    "prepack": "rm -rf lib && yarn run build"
   },
   "devDependencies": {
     "@serverless/test": "^9.0.0",
