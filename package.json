@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest src/__tests__/.*\\.test\\.ts",
     "test:watch": "jest src/__tests__/.*\\.test\\.ts --watch",
-    "build": "tsc",
+    "build": "tsc -p .",
     "lint": "eslint . && tsc --noEmit",
     "prepack": "rm -rf lib && yarn run build"
   },
